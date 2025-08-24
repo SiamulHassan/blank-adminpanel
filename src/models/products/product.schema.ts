@@ -14,6 +14,7 @@ const categoryScehma = convertToFormFields({
 });
 const schema = {
 	image: { label: 'Thumbnail', type: 'image' },
+	images: { label: 'Images', type: 'image-array', limit: 6 },
 	metaImage: { label: 'Meta Image', type: 'image' },
 
 	name: {
@@ -94,7 +95,6 @@ const schema = {
 								label: 'Warehouse',
 								type: 'data-menu',
 								model: 'warehouse',
-								
 							},
 							{
 								name: 'stock',

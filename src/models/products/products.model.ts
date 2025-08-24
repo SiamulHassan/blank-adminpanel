@@ -28,6 +28,7 @@ const layout = [
 			['unitValue', 'unit'],
 			['sku', 'barcode'],
 			['isFeatured'],
+		
 		],
 	},
 	{
