@@ -144,8 +144,7 @@ const MultiSelectFilter: FC<FilterProps> = ({ title, field, options, label }) =>
 					overflowY='scroll'
 					gap={2}>
 					{options?.length === 0 && <FilterCheckbox>No options available</FilterCheckbox>}
-					{options
-						.filter(option => option?.label?.toLowerCase()?.includes(search?.toLowerCase()))
+					{options?.filter(option => option?.label?.toLowerCase()?.includes(search?.toLowerCase()))
 						.map((option: any, i: number) => (
 							<FilterCheckbox
 								isChecked={val.includes(option?.value) ? true : false}

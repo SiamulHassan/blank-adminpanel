@@ -25,10 +25,7 @@ const layout = [
 			'tags',
 			['cost', 'price'],
 			'vat',
-			['unitValue', 'unit'],
-			['sku', 'barcode'],
-			['isFeatured'],
-		
+			['sku', 'isFeatured'],
 		],
 	},
 	{
@@ -37,7 +34,7 @@ const layout = [
 	},
 	{
 		sectionTitle: 'Discount Information',
-		fields: ['isDiscount', ['discountType', 'discount']],
+		fields: ['discountTiers'],
 	},
 
 	{
@@ -70,22 +67,32 @@ const layout = [
 
 const tableLayout: any[] = [
 	'name',
-	'price',
-	'cost',
+	'shortDescription',
+	'description',
 	'category',
 	'brand',
-	'vat',
-	'isActive',
-	'slug',
-	'status',
-	//
+	'images',
+	'image',
 	'stock',
-	'sku',
+	'damage',
+	'lowStockAlert',
+	// 'variations',
+	'cost',
+	'price',
+	// 'discountTiers',
+	'slug',
+	'tags',
+	'meta.title',
+	'meta.description',
+	'meta.keywords',
+	// 'meta.image',
+	'metaKeywords',
 	'isFeatured',
-	'isDiscount',
-	'discount',
-	'createdAt',
+	'isVisible',
+	'status',
 	'faq',
+	'vat',
+	'isDeleted',
 ];
 
 const createProductFormFields = createFormFields({ schema, layout });
